@@ -1,51 +1,61 @@
-📋 Task Manager
-A minimal Task Manager Web App built using Node.js, Express.js, EJS, and Tailwind CSS.
+# 📝 Task Manager
+
+A minimal **Task Manager Web App** built with **Node.js**, **Express.js**, **EJS**, and **Tailwind CSS**.
 
 Users can:
+- ✅ Create tasks with a title and description  
+- 📄 View a list of tasks  
+- 🔍 Read full task details
 
-✅ Create tasks with a title and description
+---
 
-📄 View a list of tasks
+## 📂 Features
 
-🔍 Read task details in a separate view
+- Create and save tasks as `.txt` files
+- View all tasks dynamically from the `/files` directory
+- Read each task in detail via `/file/:filename` route
+- Beautiful and responsive UI using Tailwind CSS
+- Smooth transitions and hover effects
 
-🚀 Features
-🧾 Create and store task files as .txt
+---
 
-📂 View list of all tasks (auto-loaded from the files directory)
+## 🛠️ Tech Stack
 
-📑 Open individual tasks using dynamic routes (/file/:filename)
+- **Node.js** – Backend runtime
+- **Express.js** – Web framework
+- **EJS** – Templating engine
+- **Tailwind CSS** – Styling
+- **File System (fs)** – For storing task data
 
-🎨 Beautiful UI using Tailwind CSS with smooth transitions
+---
 
-🛠️ Tech Stack
-Technology	Use
-Node.js	Server-side JavaScript
-Express.js	Web framework
-EJS	Templating engine
-Tailwind CSS	Frontend styling
-File System (fs)	File storage backend
+---
 
-✏️ How It Works
-Tasks are created using a form and saved as .txt files inside the /files directory.
+## ✏️ How It Works
 
-On the homepage, it lists all the files (task titles).
+- When a task is submitted, it's saved as a `.txt` file inside the `/files` directory.
+- The homepage dynamically lists all the filenames using `fs.readdir()`.
+- Clicking the “Read more” link sends the user to `/file/:filename`, where the content is displayed using `fs.readFile()`.
 
-Clicking "Read more" sends you to /file/:filename, reading the file content using fs.readFile.
+---
 
-📌 Example .txt File
-If you create a task titled "Buy Groceries", a file named BuyGroceries.txt is created inside /files with the description you wrote.
+## 🔐 Notes
 
-🔐 Security Note
-This is a basic demo and does not include:
+- This is a basic learning/demo project built for understanding backend and templating concepts.
+- No user login or database is used.
+- Input validation and sanitization are **not implemented** to keep the project simple.
 
-Authentication / Authorization
+---
 
-Input sanitization
+## 🤝 Contributing
 
-Database storage (uses file system instead)
+Have an idea, suggestion, or fix?  
+Feel free to fork the project and open a pull request. Contributions are always welcome!
 
-Use with caution or improve as needed.
+## Screenshots
+<img width="1440" alt="Screenshot 2025-06-15 at 11 09 57 AM" src="https://github.com/user-attachments/assets/e14a6aea-4d14-4d35-b58c-940b164db3b1" />
+<img width="1440" alt="Screenshot 2025-06-15 at 11 10 21 AM" src="https://github.com/user-attachments/assets/6a6c5616-d4f2-42a2-af20-80f59f60a753" />
 
-🤝 Contributing
-Pull requests and suggestions are welcome!
+
+ 
+
